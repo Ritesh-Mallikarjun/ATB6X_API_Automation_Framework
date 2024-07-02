@@ -1,5 +1,6 @@
 package com.thetestingacademy.actions;
 
+import com.thetestingacademy.pojos.BookingResponse;
 import io.restassured.response.Response;
 import org.testng.Assert;
 import static org.testng.Assert.assertEquals;
@@ -28,4 +29,8 @@ public class AssertActions {
                "value of status code is: "+response.getStatusCode());
     }
 
+    public void verifyStatusCode(Response response) {
+       assertEquals(String.valueOf(response.getStatusCode()).startsWith("200"),true,
+               "value of status code is: "+response.getStatusCode());
+    }
 }

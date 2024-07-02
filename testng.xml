@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="E:/IntelliJ_Folder/ATB6X_API_Automation_Framework">
+        <classes>
+            <class name="com.thetestingacademy.Tests.CRUD.testCreateBookingPost">
+                <methods>
+                    <include name="testCreateBooking"/>
+                    <include name="testCreateNegativeBooking"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
